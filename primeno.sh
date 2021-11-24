@@ -14,7 +14,7 @@ do
 	fi
 done
 
-if [ $number -eq 1 ]
+if [ $number -eq 1 -or $number -eq 0 ]
 then
         flag=1
 fi
