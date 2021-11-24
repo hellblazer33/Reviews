@@ -10,8 +10,14 @@ do
 	if [ $(( $number % $counter )) -eq 0 ]
 	then
 		flag=1
+		break
 	fi
 done
+
+if [ $number -eq 1 ]
+then
+        flag=1
+fi
 
 if [ $flag -eq 1 ]
 then
